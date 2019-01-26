@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SampleAppAssignment</string>
+    <string name="all_categories">التصنيفات</string>
+    <string name="no_categories">لايوجد تصنيفات</string>
+    <string name="main">الرئيسية</string>
+    <string name="no_posts">لايوجد منشورات</string>
+    <string name="no_internet"> تأكد من الاتصال بالانترنيت رجاءً</string>
+</resources>

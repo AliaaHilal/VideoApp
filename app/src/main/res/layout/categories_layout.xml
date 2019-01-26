@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/header_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentTop="true">
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/all_categories"
+        android:textColor="@color/colorHeader"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+    <View android:id="@+id/header_line"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorHeader"
+        android:layout_below="@+id/header"
+        />
+    </RelativeLayout>
+    <app.youkai.placeholdertextview.PlaceholderTextView
+        android:id="@+id/msg_no_categories"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header_content"
+        android:text="@string/no_categories"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:lines="2"
+        android:maxLines="3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:ptv_placeholderColor="@color/colorPrimaryDark1"
+        android:background="@color/colorPrimaryDark1"
+        app:ptv_sampleText="Lorem ipsum dolor sit amet" />
+    <ListView
+        android:id="@+id/categories_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_content"
+        android:divider="@android:color/transparent"/>
+</RelativeLayout>
